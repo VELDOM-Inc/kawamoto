@@ -1,0 +1,50 @@
+@charset "utf-8";
+@use "../../global/_" as g;
+
+.c_btn {
+	font-size: clamp(1.6rem, 1.357rem + 0.51vw, 1.8rem);
+	font-weight: 700;
+	line-height: 1;
+	width: 280px;
+	padding: 17px 15px 17px 35px;
+	margin: 0 auto;
+	background: g.$mainColor01;
+	color: g.$white;
+	border-radius: 50px;
+	display: block;
+	position: relative;
+	transition: all 0.3s;
+
+	&::after {
+		content: "";
+		background: url(../img/common/ico_arrow02.svg) no-repeat center / 100%;
+		width: 18px;
+		height: 18px;
+		margin: auto;
+		position: absolute;
+		right: 15px;
+		top: 0;
+		bottom: 0;
+	}
+
+	&:hover {
+		background: g.$subColor02;
+	}
+
+	&.c_btn_bottom {
+		margin: 40px auto 0;
+	}
+
+	&.__return {
+		text-align: right;
+		padding: 17px 35px 17px 15px;
+
+		&::after {
+			right: unset;
+			left: 15px;
+			transform: rotate(180deg);
+		}
+
+	}
+
+}

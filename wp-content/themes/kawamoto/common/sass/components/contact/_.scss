@@ -1,0 +1,475 @@
+@charset "utf-8";
+@use "../../global/_" as g;
+.c-contact {
+	width: min(960px,90%);
+	margin: 0 auto;
+
+	&__catch {
+		font-size: clamp(1.7rem, 1.578rem + 0.25vw, 1.8rem);
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	&__ttl {
+		@include g.font-mincho;
+		font-size: clamp(1.8rem, 0.099rem + 3.54vw, 3.2rem);
+		line-height: 1;
+		margin-bottom: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 5px;
+
+		@include g.smMax {
+			margin-bottom: 15px;
+		}
+
+		&::before {
+			content: "";
+			width: 34px;
+    		aspect-ratio: 22 / 16;
+    		background: url(../img/common/ico_ttl.svg) no-repeat center / 100%;
+		}
+
+	}
+
+	&-tel {
+		background: g.$mainColor01;
+		border-radius: 200px;
+		padding: 6% 8%;
+		margin-bottom: 120px;
+		display: flex;
+		justify-content: center;
+		gap: 45px;
+
+		@include g.smMax {
+			margin-bottom: 60px;
+			border-radius: 24px;
+			flex-direction: column;
+			align-items: center;
+			gap: 25px;
+		}
+
+		.c_ttl {
+
+			.__en {
+				color: g.$white;
+			}
+
+			.__ja {
+				font-size: clamp(2.4rem, 1.428rem + 2.03vw, 3.2rem);
+				color: g.$white;
+			}
+			
+		}
+
+		&__link {
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+			flex-direction: column;
+
+			.__link {
+				@include g.font-en;
+				font-size: clamp(4rem, 1.084rem + 6.08vw, 6.4rem);
+				line-height: 1;
+				color: g.$white;
+			}
+
+			.c-contact-tel__quote {
+				font-size: clamp(1.4rem, 1.278rem + 0.25vw, 1.5rem);
+				line-height: 1;
+				color: g.$white;
+
+				@include g.smMax {
+					width: 100%;	
+				}
+
+			}
+
+		}
+
+	}
+
+	&-form {
+
+		.c_ttl {
+			margin-bottom: 80px;
+
+			@include g.smMax {
+				margin-bottom: 40px;
+			}
+
+			.__ja {
+				font-size: clamp(2.4rem, 1.428rem + 2.03vw, 3.2rem);
+			}
+			
+		}
+
+		&__sub {
+			font-size: clamp(1.8rem, 1.071rem + 1.52vw, 2.4rem);
+			font-weight: 700;
+			line-height: 1.5;
+			color: g.$mainColor01;
+			margin-bottom: 30px;
+
+			@include g.smMax {
+				margin-bottom: 15px;
+			}
+
+		}
+
+		&__txt {
+			font-size: clamp(1.6rem, 1.357rem + 0.51vw, 1.8rem);
+			line-height: 2;
+			margin-bottom: 30px;
+		}
+
+		&__quote {
+			font-size: clamp(1.4rem, 1.278rem + 0.25vw, 1.5rem);
+			line-height: 2;
+			margin-bottom: 80px;
+
+			@include g.smMax {
+				margin-bottom: 40px;
+			}
+
+			.__required {
+				color: g.$subColor03;
+			}
+
+		}
+
+		&__step {
+			width: min(960px,100%);
+			margin: 0 auto 80px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 10px;
+
+			@include g.smMax {
+				margin: 0 auto 40px;
+			}
+
+			@include g.xsMax {
+				gap: 5px;
+			}
+
+			&::before {
+				content: "";
+				width: 50%;
+				height: 2px;
+				margin: 0;
+				background: g.$line01;
+				order: 1;
+			}
+
+			&::after {
+				content: "";
+				width: 50%;
+				height: 2px;
+				margin: 0;
+				background: g.$line01;
+				order: 3;
+			}
+
+			&--list {
+				font-size: clamp(1.6rem, 1.478rem + 0.25vw, 1.7rem);
+				font-weight: 700;
+				width: 80px;
+				height: 80px;
+				border-radius: 50px;
+				background: g.$gray01;
+				color: g.$white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 15px;
+				flex-shrink: 0;
+
+				@include g.smMax {
+					width: 60px;
+					height: 60px;
+					gap: 10px;
+				}
+
+				&.__current {
+					background: g.$mainColor01;
+					color: g.$white;
+				}
+
+				&:first-of-type {
+					order: 0;
+				}
+
+				&:nth-of-type(2) {
+					order: 2;
+				}
+
+				&:last-of-type {
+					order: 4;
+				}
+
+			}
+
+			&.__step02 {
+
+				&::before {
+					background: g.$mainColor01;
+				}
+
+			}
+
+			&.__step03 {
+
+				&::before, &::after {
+					background: g.$mainColor01;
+				}
+
+			}
+
+		}
+
+		&__body {
+
+			.c-contact-form__btn {
+
+				&.c_btn {
+					position: relative;
+
+					.c-contact-form__submit {
+						text-align: left;
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						cursor: pointer;
+					}
+
+					&::after {
+						padding: 30px;
+					}
+
+				}
+
+			}
+
+		}
+
+		&__policy {
+			line-height: 2;
+
+			.__link {
+				font-weight: 700;
+				color: g.$mainColor01;
+				display: inline-flex;
+				align-items: center;
+				gap: 4px;
+
+				&::after {
+					content: "";
+					width: 14px;
+					height: 14px;
+					margin: auto;
+					background: url(../img/common/ico_blank.svg) no-repeat center / 100%;
+				}
+				
+			}
+
+		}
+
+	}
+
+	/* contact-confirm */
+	&.__confirm {
+
+		.c-contact-form {
+
+			&__operation {
+				font-size: clamp(1.8rem, 1.071rem + 1.52vw, 2.4rem);
+				font-weight: 700;
+				line-height: 2;
+				margin-bottom: 80px;
+
+				@include g.smMax {
+					margin-bottom: 40px;
+				}
+
+				.__sub {
+					color: g.$mainColor01;
+				}
+
+			}
+
+			&__sub {
+				margin-bottom: 80px;
+
+				@include g.smMax {
+					margin-bottom: 40px;
+				}
+
+			}
+
+			&__body {
+
+				.c-contact-form__block {
+					padding: 40px 0;
+					margin: 0;
+					border-bottom: 1px solid g.$line01;
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					gap: 20px;
+
+					@include g.smMax {
+						padding: 20px 0;
+					}
+
+					.c-contact-form__ttl {
+						font-size: clamp(2rem, 1.028rem + 2.03vw, 2.8rem);
+						line-height: 2;
+						width: 100%;
+						margin: 0;
+						flex-shrink: 0;
+
+						@include g.smMax {
+							width: 100%;
+						}
+
+					}
+
+					.c-contact-form__item {
+						font-size: clamp(1.6rem, 1.357rem + 0.51vw, 1.8rem);
+						line-height: 2;
+						width: 100%;
+					}
+
+					&:first-of-type {
+						padding: 0 0 40px;
+
+						@include g.smMax {
+							padding: 30px 0;
+						}
+
+					}
+
+					@include g.smMax {
+						flex-direction: column;
+						align-items: flex-start;
+						gap: 15px;
+					}
+
+				}
+
+			}
+
+			&__btn {
+				width: min(360px, 90%);
+				height: 80px;
+				position: relative;
+
+				&.c_btn {
+					position: relative;
+
+					.c-contact-form__submit {
+						text-align: left;
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						cursor: pointer;
+					}
+
+					&::after {
+						padding: 30px;
+					}
+
+				}
+
+			}
+
+			&__return {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 20px;
+				transition: all 0.3s;
+
+				&::before {
+					content: "";
+					width: 48px;
+					height: 48px;
+					padding: 14px;
+					border-radius: 50px;
+					box-sizing: border-box;
+					background: g.$mainColor01 url(../img/common/ico_arrow02.svg) no-repeat center / 20px;
+					transform: rotate(180deg);
+					transition: all 0.3s;
+				}
+
+				&:hover {
+
+					&::before {
+						background: g.$subColor02 url(../img/common/ico_arrow02.svg) no-repeat center / 20px;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	/* contact-complete */
+	&.__complete {
+
+		.c-contact-complete__ttl {
+			font-size: clamp(2.8rem, 2.314rem + 1.01vw, 3.2rem);
+			text-align: center;
+			font-weight: 700;
+			line-height: 1;
+			color: g.$mainColor01;
+			margin-bottom: 40px;
+
+			@include g.smMax {
+				margin-bottom: 30px;
+			}
+
+		}
+
+		.c-contact-complete__txt {
+			font-size: clamp(1.6rem, 1.357rem + 0.51vw, 1.8rem);
+			font-weight: 700;
+			line-height: 2;
+			text-align: center;
+			margin-bottom: 80px;
+
+			@include g.smMax {
+				margin-bottom: 40px;
+			}
+
+		}
+
+		.c_btn {
+			width: 320px;
+			padding-left: 30px;
+			margin: 0 auto;
+
+			@include g.smMax {
+				width: 265px;
+				padding-left: 20px;
+			}
+
+		}
+	}
+
+	.__red {
+		color: g.$subColor02;
+	}
+
+	.wpcf7-not-valid-tip {
+		font-size: 1.4rem;
+		margin: 10px 0 0;
+	}
+
+}

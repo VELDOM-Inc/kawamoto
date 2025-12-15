@@ -1,0 +1,74 @@
+@charset "utf-8";
+@use "../../global/_" as g;
+
+.c-index-visual {
+  margin: 180px 40px 120px;
+  position: relative;
+
+  @include g.smMax {
+	width: 90%;
+	margin: 100px auto 45px;
+  }
+
+  &__catch {
+    @include g.font-mincho;
+    font-size: clamp(3.2rem, -4.577rem + 16.2vw, 9.6rem);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 150px;
+    position: sticky;
+	right: 0;
+	left: 0;
+    top: 180px;
+    transition: margin 0.3s ease-out;
+    z-index: 3;
+
+	@include g.mdMax {
+		font-size: 6rem;
+	}
+
+	@include g.smMax {
+		font-size: clamp(2.8rem, 1.467rem + 2.78vw, 4.8rem);
+		margin-bottom: 25px;
+		top: 100px;
+	}
+
+	&.is-scroll {
+		margin-bottom: 350px;
+
+		@include g.smMax {
+			margin-bottom: 200px;
+		}
+
+	}
+
+  }
+
+  &__img {
+	width: 100%;
+	height: 700px;
+
+	@include g.smMax {
+		height: 480px;
+	}
+
+	.__img {
+		height: 100%;
+		object-fit: cover;
+		border-radius: 24px;
+	}
+
+  }
+
+}
+
+.c-mv {
+	width: min(1280px,90%);
+	margin: 0 auto;
+	padding: 265px 0 160px;
+
+	@include g.smMax {
+		padding: 110px 0 60px;
+	}
+
+}

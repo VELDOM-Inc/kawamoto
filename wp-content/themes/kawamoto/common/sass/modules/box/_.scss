@@ -1,0 +1,13 @@
+@charset "utf-8";
+@use "../../global/_" as g;
+.m-box {
+	padding: 25px;
+	background: g.$white;
+
+	@include g.smMax {
+		padding: 15px;
+	}
+	&._gray_ {
+		background: #f9f9f9;
+	}
+}

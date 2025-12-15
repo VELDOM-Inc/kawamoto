@@ -1,0 +1,256 @@
+@charset "utf-8";
+@use "../../global/_" as g;
+
+.c-mv__works-detail {
+    padding: 265px 0 100px;
+
+    @include g.smMax {
+        padding: 110px 0 60px;
+    }
+
+}
+
+.c-works-detail {
+    background: g.$bg01;
+    padding: 80px 0;
+    margin-bottom: 80px;
+
+    @include g.smMax {
+        padding: 40px 0;
+        margin-bottom: 40px;
+    }
+
+    &__inner {
+        width: min(1280px,90%);
+        margin: 0 auto;
+    }
+
+    &-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 80px;
+
+        @include g.mdMax {
+            gap: 40px;
+        }
+
+        @include g.smMax {
+            flex-direction: column;
+        }
+
+        &__slider {
+            width: 56.25%;
+
+            @include g.smMax {
+                width: 100%;
+            }
+
+            &--inner {
+                margin-bottom: 30px;
+
+                @include g.smMax {
+                    margin-bottom: 15px;
+                }
+
+            }
+
+            &--controller {
+                background: g.$white;
+                padding: 15px 0;
+                border-radius: 100px;
+                position: relative;
+
+                .c-works-detail-item__slider--btn {
+
+                    .slick-arrow {
+                        background: url(../img/common/ico_arrow-blue.svg) no-repeat center / 100%;
+                        width: 18px;
+                        height: 18px;
+                        transform: unset;
+                        transition: all 0.3s;
+
+                        &::before {
+                            content: none;
+                        }
+
+                        &.slick-prev {
+                            margin: auto;
+                            transform: rotate(180deg);
+                            left: 15px;
+                            top: 0;
+                            bottom: 0;
+                        }
+
+                        &.slick-next {
+                            margin: auto;
+                            right: 15px;
+                            top: 0;
+                            bottom: 0;
+                        }
+
+                        &.slick-disabled {
+                            opacity: 0.5;
+                        }
+
+                    }
+
+                }
+
+                .c-works-detail-item__slider--number {
+
+                    .c-works-detail-item__slider--count {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 8px;
+
+                        &::before {
+                            content: "";
+                            width: 24px;
+                            height: 2px;
+                            border-radius: 2px;
+                            background: g.$subColor02;
+                            order: 1;
+
+                            &::before {
+                                content: "0";
+                            }
+
+                        }
+
+                        .now_count {
+                            @include g.font-en;
+                            font-size: clamp(2rem, 1.028rem + 2.03vw, 2.8rem);
+                            font-weight: 500;
+                            color: g.$mainColor01;
+                            order: 0;
+
+                            &::before {
+                                content: "0";
+                            }
+
+                        }
+
+                        .all_count {
+                            @include g.font-en;
+                            font-size: clamp(2rem, 1.028rem + 2.03vw, 2.8rem);
+                            font-weight: 500;
+                            color: g.$subColor02;
+                            order: 2;
+
+                            &::before {
+                                content: "0";
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        &__result {
+            width: calc(43.75% - 80px);
+
+            @include g.smMax {
+                width: 100%;
+            }
+
+            .c-works-detail-item__contents {
+                font-size: 1.6rem;
+                font-weight: 500;
+                line-height: 2;
+                margin-bottom: 40px;
+
+                @include g.smMax {
+                    margin-bottom: 30px;
+                }
+
+            }
+
+            .c-works-detail-item__table {
+
+                &--inner {
+                    padding: 20px 0;
+                    border-bottom: 1px solid g.$subColor02;
+                    display: flex;
+                    gap: 20px;
+
+                    @include g.smMax {
+                        padding: 15px 0;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                        gap: 15px;
+                    }
+
+                    .c-works-detail-item__table--ttl {
+                        font-size: 1.6rem;
+                        line-height: 1.35;
+                        font-weight: 700;
+                        width: 100px;
+                        color: g.$mainColor01;
+                    }
+
+                    .c-works-detail-item__table--txt {
+                        font-size: 1.6rem;
+                        line-height: 1.35;
+                    }
+
+                    &:first-of-type {
+                        border-top: 1px solid g.$subColor02;
+                    }
+
+                }
+
+            }
+
+        }
+
+        .c-works-detail-item__info {
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            @include g.smMax {
+                margin-bottom: 20px;
+            }
+
+            .c-works-detail-item__time {
+                @include g.font-en;
+                font-size: clamp(1.5rem, 1.135rem + 0.76vw, 1.8rem);
+                line-height: 1;
+                color: g.$gray01;
+            }
+
+            .c-works-detail-item__category {
+                font-size: 1.5rem;
+                line-height: 1;
+                background: g.$white;
+                padding: 10px 15px;
+                border: 1px solid g.$line01;
+                border-radius: 30px;
+            }
+
+        }
+
+        .c-works-detail-item__ttl {
+            font-size: clamp(2.4rem, 1.428rem + 2.03vw, 3.2rem);
+            font-weight: 700;
+            line-height: 1.35;
+            margin-bottom: 50px;
+            color: g.$mainColor01;
+
+            @include g.smMax {
+                margin-bottom: 40px;
+            }
+
+        }
+        
+    }
+
+}

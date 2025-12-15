@@ -1,0 +1,218 @@
+@charset "utf-8";
+@use "../../global/_" as g;
+
+.c-contact-form {
+
+	&__body {
+		margin-bottom: 40px;
+	}
+
+	&__block {
+		margin-bottom: 45px;
+
+		.c-contact-form__ttl {
+			font-size: clamp(1.8rem, 1.557rem + 0.51vw, 2rem);
+			font-weight: 700;
+			margin-bottom: 20px;
+
+			.__red {
+				color: #FF5858;
+			}
+
+		}
+
+		.c-contact-form__item {
+
+			&.__name {
+				width: 45%;
+
+				@include g.smMax {
+					width: 100%;
+				}
+
+			}
+
+			.c-contact-form__text {
+				width: 100%;
+				padding: 20px 15px;
+				background: g.$gray02;
+				border: 1px solid g.$line01;
+				border-radius: 4px;
+				color: #333;
+				box-sizing: border-box;
+
+				&::placeholder {
+					color: #999;
+				}
+
+			}
+
+			.c-contact-form__number {
+				width: 30%;
+
+				@include g.smMax {
+					width: 100%;
+				}
+
+				.wpcf7-form-control-wrap {
+					display: flex;
+					align-items: center;
+					gap: 10px;
+
+					&::before {
+						content: "〒";
+						font-size: 1.6rem;
+					}
+
+				}
+
+			}
+
+			.c-contact-form__tel {
+				width: 30%;
+
+				@include g.smMax {
+					width: 100%;
+				}
+
+			}
+
+			.c-contact-form__check {
+				display: flex;
+				align-items: center;
+				gap: 40px;
+
+				@include g.smMax {
+					flex-wrap: wrap;
+					gap: 20px;
+				}
+
+				.wpcf7-list-item {
+					margin: 0;
+
+					& > label {
+						margin: 0;
+						display: flex;
+						align-items: center;
+						gap: 4px;
+						cursor: pointer;
+					}
+
+					input[type=checkbox] {
+
+						&::before {
+							content: "";
+							width: 24px;
+							height: 24px;
+							background: url(../img/contact/ico_check.svg) no-repeat center / 100%;
+							display: block;
+							transition: all 0.2s;
+
+							@include g.smMax {
+								width: 20px;
+								height: 20px;
+							}
+
+						}
+
+						&:checked {
+
+							&::before {
+								content: "";
+								background: url(../img/contact/ico_check_after.svg) no-repeat center / 100%;
+							}
+
+						}
+
+					}
+					
+					.wpcf7-list-item-label {
+						font-size: clamp(1.4rem, 1.157rem + 0.51vw, 1.6rem);
+						font-weight: 700;
+						line-height: 1;
+					}
+
+				}
+
+			}
+
+			.c-contact-form__quote {
+				font-size: clamp(1.4rem, 1.278rem + 0.25vw, 1.5rem);
+				line-height: 1.35;
+				margin: 15px 0 0;
+
+				& + .c-contact-form__address {
+					margin: 20px 0 0;
+				}
+
+			}
+
+			.c-contact-form__policy {
+				margin-bottom: 20px;
+			}
+
+		}
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+
+	}
+
+	.c-contact-form__btn {
+		width: min(320px,90%);
+		height: 60px;
+		margin: 0 auto;
+		border-radius: 50px;
+		background: g.$mainColor01;
+		position: relative;
+		cursor: pointer;
+		transition: all 0.3s;
+
+		.c-contact-form__submit {
+			font-size: clamp(1.6rem, 1.114rem + 1.01vw, 2rem);
+			font-weight: 700;
+			text-align: left;
+			width: calc(100% - 40px);
+			height: 100%;
+			background: transparent;
+			color: g.$white;
+			cursor: pointer;
+			position: absolute;
+			top: 0;
+			left: 40px;
+		}
+
+		&::after {
+			content: "";
+    		background: url(../img/common/ico_arrow02.svg) no-repeat center / 100%;
+    		width: 18px;
+    		height: 18px;
+    		margin: auto;
+    		position: absolute;
+    		right: 15px;
+    		top: 0;
+    		bottom: 0;
+		}
+
+		&:hover {
+			background: g.$subColor02;
+		}
+
+	}
+
+	.c-contact-form__return {
+		text-align: center;
+		margin: 40px auto 0;
+
+		&__btn {
+			font-size: clamp(1.8rem, 1.557rem + 0.51vw, 2rem);
+			font-weight: 700;
+			line-height: 1;
+			background: transparent;
+			cursor: pointer;
+		}
+
+	}
+	
+}

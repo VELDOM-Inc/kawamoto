@@ -1,0 +1,288 @@
+@charset "utf-8";
+@use "../../global/_" as g;
+.l-footer {
+	margin: 200px 0 0;
+	position: relative;
+
+	@include g.smMax {
+		margin: 0;
+	}
+
+	&__inner {
+		width: min(1280px,90%);
+		margin: 0 auto;
+		padding: 0 0 80px;
+		border-bottom: 1px solid g.$line01;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+
+		@include g.mdMax {
+			flex-direction: column;
+			gap: 30px;
+		}
+
+		@include g.smMax {
+			padding: 0;
+		}
+
+	}
+
+	&-left {
+		width: calc(100% - 300px);
+
+		@include g.mdMax {
+			width: 100%;
+		}
+
+		&-menu {
+			display: flex;
+			align-items: flex-start;
+			gap: 15px;
+
+			@include g.smMax {
+				flex-direction: column;
+				gap: 0;
+			}
+
+			&__list {
+				width: calc((100% - 45px) / 4);
+
+				@include g.smMax {
+					width: 100%;
+					border-bottom: 1px solid g.$line01;
+				}
+
+				& > .__link {
+					font-size: clamp(1.6rem, 1.478rem + 0.25vw, 1.7rem);
+					font-weight: 700;
+					color: g.$mainColor01;
+					margin-bottom: 40px;
+					display: block;
+
+					@include g.smMax {
+						color: g.$baseColor;
+						padding: 15px 0;
+						margin-bottom: 0;
+						border-bottom: 1px solid g.$line01;
+					}
+
+				}
+
+				&.border-none {
+
+					@include g.smMax {
+						border: none;
+					}
+
+				}
+
+				.__inner {
+					font-size: clamp(1.6rem, 1.478rem + 0.25vw, 1.7rem);
+					font-weight: 700;
+					color: g.$mainColor01;
+					margin-bottom: 40px;
+					cursor: pointer;
+
+					@include g.smMax {
+						margin-bottom: 0;
+					}
+
+					&.has-sub {
+						margin-bottom: 30px;
+						display: block;
+
+						@include g.smMax {
+							color: g.$baseColor;
+							padding: 15px 0;
+							margin: 0;
+							position: relative;
+						}
+
+						&::after {
+
+							@include g.smMax {
+								content: "＋";
+								font-size: 1.5rem;
+								font-weight: 700;
+								line-height: 1;
+								color: g.$mainColor01;
+								position: absolute;
+								top: 15px;
+								right: 0;
+							}
+
+						}
+
+						&.menu-toggle {
+
+							&::after {
+								content: "－";
+							}
+
+						}
+
+					}
+
+				}
+
+				&--sub {
+
+					@include g.smMax {
+						display: none;
+					}
+
+					&-inner {
+						display: flex;
+						flex-direction: column;
+						gap: 20px;
+
+						@include g.smMax {
+							padding: 15px 0;
+							flex-wrap: wrap;
+							justify-content: space-between;
+							flex-direction: unset;
+							gap: 15px;
+						}
+
+						.__link {
+							font-size: clamp(1.4rem, 1.278rem + 0.25vw, 1.5rem);
+							font-weight: 500;
+							line-height: 1.35;
+
+							@include g.smMax {
+								width: calc((100% - 15px) / 2);
+							}
+
+						}
+
+					}
+					
+				}
+
+			}
+
+		}
+
+	}
+
+	&-right {
+		width: 220px;
+
+		@include g.smMax {
+			width: 100%;
+		}
+
+		&__logo {
+			width: 160px;
+			margin-bottom: 40px;
+			display: block;
+
+			@include g.smMax {
+				margin-bottom: 20px;
+			}
+
+		}
+
+		&__address {
+			font-size: clamp(1.4rem, 1.157rem + 0.51vw, 1.6rem);
+			line-height: 1.5;
+			margin-bottom: 20px;
+
+			@include g.smMax {
+				margin-bottom: 15px;
+			}
+
+		}
+
+		&__info {
+			font-size: clamp(1.4rem, 1.278rem + 0.25vw, 1.5rem);
+			line-height: 1.5;
+			margin-bottom: 40px;
+		}
+
+		&__sns {
+			width: 134px;
+			display: block;
+
+			@include g.smMax {
+				display: none;
+			}
+
+		}
+
+	}
+
+	&-bottom {
+		width: min(1280px,90%);
+		margin: 0 auto;
+		padding: 40px 0 60px;
+		display: flex;
+		justify-content: space-between;
+
+		@include g.smMax {
+			text-align: center;
+			padding: 40px 0 30px;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 20px;
+		}
+
+		&__link {
+			font-size: clamp(1.4rem, 1.278rem + 0.25vw, 1.5rem);
+			line-height: 1;
+		}
+
+		&__copyright {
+			font-size: 1.3rem;
+			line-height: 1.5;
+			color: g.$gray01;
+		}
+
+	}
+
+	&-pagetop {
+		@include g.font-en;
+		font-size: clamp(1.6rem, 1.114rem + 1.01vw, 2rem);
+		font-weight: 500;
+		line-height: 1;
+		text-align: center;
+		color: g.$mainColor01;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+		position: absolute;
+		right: 5%;
+		bottom: 150px;
+
+		@include g.smMax {
+			padding: 0 0 45px;
+			position: unset;
+		}
+
+		&::before {
+			content: "";
+			width: 48px;
+			height: 48px;
+			border-radius: 50px;
+			border: 2px solid g.$mainColor01;
+			background: url(../img/common/ico_arrow-blue.svg) no-repeat center / 18px;
+			transform: rotate(-90deg);
+			transition: all 0.3s;
+		}
+
+		&:hover {
+
+			&::before {
+				border: 2px solid g.$subColor02;
+				background: g.$subColor02 url(../img/common/ico_arrow02.svg) no-repeat center / 18px;
+			}
+			
+		}
+
+	}
+	
+}

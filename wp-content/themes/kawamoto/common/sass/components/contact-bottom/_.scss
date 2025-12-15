@@ -1,0 +1,94 @@
+@charset "utf-8";
+@use "../../global/_" as g;
+
+.c-contact-bottom {
+	padding: 160px 0 0;
+	border-top: 1px solid g.$line01;
+
+	@include g.smMax {
+		padding: 60px 0 0;
+	}
+
+	&__inner {
+		width: min(1280px,90%);
+		margin: 0 auto;
+		padding: 95px 160px;
+		background: g.$mainColor01;
+		border-radius: 500px;
+		transition: all 0.3s;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		@include g.smMax {
+			padding: 30px;
+			border-radius: 24px;
+		}
+
+		&:hover {
+			background: g.$subColor02;
+		}
+
+	}
+
+	&__info {
+
+		.c_ttl {
+			color: g.$white;
+			margin-bottom: 45px;
+
+			@include g.smMax {
+				margin-bottom: 20px;
+			}
+
+			.__en {
+				color: g.$white;
+
+				&::before {
+					filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(78deg) brightness(105%) contrast(100%);
+				}
+
+			}
+
+			.__ja {
+				color: g.$white;
+			}
+
+		}
+
+		.c-contact-bottom__txt {
+			font-size: clamp(1.4rem, 1.267rem + 0.28vw, 1.6rem);
+			line-height: 2;
+			color: g.$white;
+		}
+
+	}
+
+	&__arrow {
+		width: 80px;
+		height: 80px;
+		border-radius: 100px;
+		background: g.$white;
+		position: relative;
+
+		@include g.mdMax {
+			width: 48px;
+			height: 48px;
+		}
+
+		&::before {
+			content: "";
+			width: 18px;
+			height: 18px;
+			margin: auto;
+			background: url(../img/common/ico_arrow-blue.svg) no-repeat center / 100%;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+		}
+
+	}
+
+}

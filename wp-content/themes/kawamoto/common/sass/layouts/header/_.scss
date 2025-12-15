@@ -1,0 +1,314 @@
+@charset "utf-8";
+@use "../../global/_" as g;
+
+.l-header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+
+	&__inner {
+		padding: 0 40px;
+		margin: 25px 0 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		@include g.mdMax {
+			width: 90%;
+			margin: 25px auto 0;
+			padding: 0;
+		}
+
+		@include g.smMax {
+			height: 64px;
+			margin: 0 auto;
+			align-items: center;
+		}
+
+	}
+
+	&-logo {
+		width: 195px;
+		position: relative;
+		z-index: 12;
+
+		@include g.mdMax {
+			width: 160px;
+		}
+
+		&.__white {
+			filter: brightness(0) saturate(100%) invert(87%) sepia(99%) saturate(8%) hue-rotate(184deg) brightness(110%) contrast(97%);
+		}
+
+	}
+
+	&-nav {
+
+		&-sp {
+			display: none;
+
+			@include g.smMax {
+				display: block;
+			}
+
+			&__toggle {
+				width: 54px;
+				height: 54px;
+				background: g.$mainColor01;
+				border-radius: 50px;
+				position: relative;
+				cursor: pointer;
+				display: none;
+
+				@include g.smMax {
+					display: block;
+				}
+
+				.__sub {
+					width: 24px;
+					height: 2px;
+					margin: auto;
+					background: g.$white;
+					position: absolute;
+					left: 0;
+					right: 0;
+					opacity: 1;
+					transition: all 0.3s;
+
+					&:nth-of-type(1) {
+						top: 19px;
+					}
+
+					&:nth-of-type(2) {
+						top: 26px;
+					}
+
+					&:nth-of-type(3) {
+						top: 33px;
+					}
+
+				}
+
+			}
+
+			&__list {
+				opacity: 0;
+				visibility: hidden;
+				transition: all 0.3s;
+				width: 100%;
+				height: 100%;
+				padding: 100px 0 30px;
+				background: g.$mainColor01;
+				position: fixed;
+				top: 0;
+				left: 0;
+				z-index: 11;
+
+				&__inner {
+					width: 90%;
+					margin: 0 auto;
+				}
+
+				&--item {
+					border-bottom: 1px solid g.$white;
+					position: relative;
+
+					& > .__link {
+						font-size: 1.6rem;
+						font-weight: 700;
+						line-height: 1;
+						color: g.$white;
+						padding: 20px 0;
+						display: block;
+					}
+
+					&.__toggle {
+						position: relative;
+						cursor: pointer;
+
+						&::after {
+							content: "＋";
+							font-size: 1.5rem;
+							font-weight: 700;
+							color: g.$subColor02;
+							position: absolute;
+							right: 0;
+							top: 20px;
+							transition: all 0.3s;
+						}
+
+						.__inner {
+							font-size: 1.6rem;
+							font-weight: 700;
+							line-height: 1;
+							color: g.$white;
+							width: calc(100% - 15px);
+							padding: 20px 0;
+						}
+
+						&.menu-toggle {
+
+							&::after {
+								content: "－";
+							}
+
+						}
+
+					}
+
+				}
+
+				&--sub {
+					padding-bottom: 20px;
+					display: none;
+
+					&-inner {
+						display: flex;
+						flex-wrap: wrap;
+						gap: 15px;
+					}
+
+					.__link {
+						font-size: 1.4rem;
+						line-height: 1.35;
+						font-weight: 500;
+						width: calc((100% - 15px) / 2);
+						color: g.$white;
+					}
+
+				}
+
+			}
+
+			&.is-open {
+
+				.l-header-nav-sp__toggle {
+					z-index: 12;
+
+					.__sub {
+
+						&:nth-of-type(1) {
+							top: 27px;
+							transform: rotate(45deg);
+						}
+
+						&:nth-of-type(2) {
+							opacity: 0;
+						}
+
+						&:nth-of-type(3) {
+							top: 27px;
+							transform: rotate(-45deg);
+						}
+
+					}
+
+				}
+
+				.l-header-nav-sp__list {
+					opacity: 1;
+					visibility: visible;
+				}
+
+			}
+
+		}
+
+		&__list {
+
+			@include g.smMax {
+				display: none;
+			}
+
+			.l-header-nav__center {
+				padding: 20px 0;
+				display: flex;
+				gap: 30px;
+
+				@include g.mdMax {
+					gap: 20px;
+				}
+
+				&__item {
+
+					.l-header-nav__link {
+						font-size: 1.7rem;
+						font-weight: 500;
+						position: relative;
+
+						@include g.mdMax {
+							font-size: 1.5rem;
+						}
+
+						&::after {
+							content: "";
+							width: 100%;
+							height: 2px;
+							background: g.$subColor01;
+							transform: scale(0,1);
+							transform-origin: left top;
+							transition: transform 0.5s;
+							position: absolute;
+							left: 0;
+							bottom: -1px;
+						}
+
+						&:hover {
+
+							&::after {
+								transform: scale(1,1);
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&-contact {
+		font-size: 1.7rem;
+		font-weight: 500;
+		width: 140px;
+		height: 140px;
+		border-radius: 100px;
+		background: g.$mainColor01;
+		color: g.$white;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 15px;
+		transition: all 0.3s;
+
+		@include g.mdMax {
+			width: 110px;
+			height: 110px;
+			font-size: 1.5rem;
+		}
+
+		@include g.smMax {
+			display: none;
+		}
+
+		&::before {
+			content: "";
+			width: 35px;
+			aspect-ratio: 35/26;
+			background: url(../img/common/ico_mail-white.svg) no-repeat center / 100%;
+		}
+
+		&:hover {
+			background: g.$subColor02;
+		}
+
+	}
+
+}

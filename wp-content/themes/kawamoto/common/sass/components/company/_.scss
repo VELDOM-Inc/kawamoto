@@ -1,0 +1,360 @@
+@charset "utf-8";
+@use "../../global/_" as g;
+
+.c-company {
+
+    &-message {
+
+        &__inner {
+            width: min(1280px,90%);
+            margin: 0 auto 160px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 30px;
+
+            @include g.smMax {
+                margin: 0 auto 60px;
+                flex-direction: column;
+                gap: 40px;
+            }
+
+        }
+
+        &__img {
+            width: min(560px,43.75%);
+
+            @include g.smMax {
+                width: min(500px,100%);
+                margin: 0 auto;
+            }
+
+        }
+
+        &__info {
+            width: min(580px,45%);
+
+            @include g.smMax {
+                width: 100%;
+            }
+
+            &--catch {
+                @include g.font-mincho;
+                font-size: clamp(3.6rem, 2.628rem + 2.03vw, 4.4rem);
+                font-weight: 900;
+                line-height: 1.5;
+                margin-bottom: 45px;
+                display: flex;
+                align-items: flex-start;
+
+                @include g.lgMax {
+                    font-size: 3.2rem;
+                }
+
+                @include g.smMax {
+                    font-size: 2.4rem;
+                }
+
+                &::before {
+                    content: "";
+                    background: url(../img/common/ico_emphasis-start.svg) no-repeat center / 100%;
+                    width: 35px;
+                    aspect-ratio: 5/4;
+
+                    @include g.lgMax {
+                        width: 27px;
+                    }
+
+                    @include g.smMax {
+                        width: 18px;
+                    }
+
+                }
+
+                &::after {
+                    content: "";
+                    background: url(../img/common/ico_emphasis-end.svg) no-repeat center / 100%;
+                    width: 35px;
+                    aspect-ratio: 5/4;
+                    margin: auto 0 0 0;
+
+                    @include g.lgMax {
+                        width: 27px;
+                    }
+
+                    @include g.smMax {
+                        width: 18px;
+                    }
+
+                }
+
+            }
+
+            &--txt {
+                font-size: clamp(1.5rem, 1.135rem + 0.76vw, 1.8rem);
+                font-weight: 700;
+                line-height: 2;
+                margin-bottom: 80px;
+
+                @include g.smMax {
+                    margin-bottom: 40px
+                }
+                
+            }
+
+            &--name {
+                @include g.font-mincho;
+                font-size: 3.2rem;
+                line-height: 1;
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                .__sub {
+                    @include g.font-normal;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    line-height: 1;
+                }
+
+            }
+
+        }
+        
+    }
+
+    .bg_blue {
+        width: min(1840px,90%);
+        margin: 0 auto 160px;
+        padding: 160px 0;
+        background: g.$bg01;
+        border-radius: 24px;
+
+        @include g.smMax {
+            width: 100%;
+            margin: 0 auto 60px;
+            padding: 60px 0;
+            border-radius: 0;
+        }
+
+    }
+
+    &-overview {
+        width: min(960px,90%);
+        margin: 0 auto 160px;
+
+        @include g.smMax {
+            margin: 0 auto 60px;
+        }
+
+        .c_ttl {
+            width: fit-content;
+            margin: 0 auto 45px;
+        }
+
+        &__block {
+            padding: 30px 0;
+            border-bottom: 1px dashed g.$baseColor;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+            @include g.smMax {
+                padding: 24px 0;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+
+            &:first-of-type {
+                border-top: 1px dashed g.$baseColor;
+            }
+
+            .c-company-overview__ttl {
+                font-size: 1.8rem;
+                font-weight: 700;
+                line-height: 2;
+                width: 200px;
+                flex-shrink: 0;
+            }
+
+            .c-company-overview__txt {
+                font-size: 1.6rem;
+                font-weight: 500;
+                line-height: 2;
+
+                &--tb {
+
+                    &-inner {
+                        display: flex;
+                        gap: 20px;
+                    }
+
+                    &-ttl {
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                        width: 180px;
+                    }
+
+                    &-txt {
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    &-access {
+        width: min(1400px,90%);
+        margin: 0 3% 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 7%;
+
+        @include g.smMax {
+            margin: 0 auto;
+        }
+
+        &__info {
+            width: 230px;
+            flex-shrink: 0;
+
+            @include g.smMax {
+                width: 100%;
+            }
+
+            .c_ttl {
+                margin-bottom: 45px;
+
+                @include g.smMax {
+                    margin-bottom: 20px;
+                }
+
+            }
+
+            .c-company-access__map {
+
+                @include g.smMax {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+
+            }
+
+            &--address {
+                font-size: 1.6rem;
+                line-height: 2;
+                font-weight: 500;
+                margin-bottom: 30px;
+
+                @include g.smMax {
+                    margin-bottom: 15px
+                }
+
+            }
+
+            &--link {
+                @include g.font-en;
+                font-size: 1.8rem;
+                text-decoration: underline;
+                color: g.$mainColor01;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                &::before {
+                    content: "";
+                    width: 20px;
+                    height: 26px;
+                    background: url(../img/common/ico_pin.svg) no-repeat center / 100%;
+                }
+
+            }
+
+        }
+
+        &__map {
+            width: 70%;
+
+            .frame {
+                width: 100%;
+                aspect-ratio: 998/561;
+                border-radius: 16px;
+            }
+
+        }
+
+    }
+
+    &-history {
+        width: min(1280px,90%);
+        margin: 0 auto;
+
+        .c_ttl {
+            width: fit-content;
+            margin: 0 auto 45px;
+        }
+
+        &__flow {
+            display: flex;
+            align-items: flex-start;
+
+            @include g.smMax {
+                width: min(500px,90%);
+                margin: 0 auto;
+                flex-direction: column;
+            }
+
+            .c-company-history__block {
+                aspect-ratio: 320/259;
+                margin-right: -80px;
+
+                @include g.lgMax {
+                    margin-right: -35px;
+                }
+
+                @include g.smMax {
+                    width: 100%;
+                    aspect-ratio: 343/160;
+                    margin: -20px 0 0;
+                }
+
+                &:first-of-type {
+
+                    @include g.smMax {
+                        margin: 0;
+                    }
+                    
+                }
+
+                &:nth-of-type(2) {
+                    transition-delay: 0.3s;
+                }
+
+                &:nth-of-type(3) {
+                    transition-delay: 0.6s;
+                }
+
+                &:nth-of-type(4) {
+                    transition-delay: 0.9s;
+                }
+
+                &:last-of-type {
+                    margin-right: 0;
+                    transition-delay: 1.2s;
+                }
+
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,122 @@
+@charset "utf-8";
+@use "../../global/_" as g;
+
+html {
+	@include g.smMin {
+		overflow-y: scroll;
+	}
+	@include g.smBtMd {
+		font-size: calc(100vw / 102.4);
+	}
+}
+body {
+	@include g.font-normal;
+	font-size: 16px;
+}
+a {
+	color: g.$baseColor;
+	text-decoration: none;
+	
+	@include g.hover {
+		text-decoration: none;
+	}
+	.icon-filter_none::before {
+		display: inline-block;
+	}
+}
+sup {
+	vertical-align: super;
+}
+input,
+textarea {
+	appearance: none;
+	max-width: 100%;
+}
+input,
+select,
+textarea {
+	@include g.smMax {
+		font-size: g.$fz-m !important;
+	}
+}	
+input::placeholder {
+	opacity: .5;
+}
+button,
+input[type="button"],
+input[type="submit"] {
+	appearance: none;
+}
+.icon-filter_none {
+	margin: 0 3px;
+	color: g.$baseColor;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+
+/* other */
+.__category {
+    font-size: clamp(1.3rem, 1.057rem + 0.51vw, 1.5rem);
+    line-height: 1;
+    background-color: g.$white;
+    padding: 8px 14px;
+    border: 1px solid g.$line01;
+    border-radius: 50px;
+ }
+
+.__time {
+    @include g.font-en;
+    font-size: clamp(1.4rem, 1.278rem + 0.25vw, 1.5rem);
+    text-align: center;
+    color: g.$gray01;
+    margin: auto 0 0 0;
+}
+
+/* animation */
+
+.is-blur {
+    opacity: 0;
+}
+.is-blur.is-inview {
+    animation: blur 1s backwards;
+    opacity: 1;
+}
+
+.is-fade {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s, transform 0.8s;
+}
+.is-fade.is-inview {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.5s;
+}
+.__opacity {
+	opacity: 1;
+	transition: all 0.3s;
+
+	&:hover {
+		opacity: 0.7;
+	}
+
+}
+
+/* animation keyframes */
+
+@keyframes blur {
+	0% {
+    	filter: blur(0.2em);
+    	opacity: 0;
+	}
+	50% {
+    	filter: blur(0.05em);
+    	opacity: 1;
+	}
+	100% {
+    	filter: blur(0);
+    	opacity: 1;
+	}
+}

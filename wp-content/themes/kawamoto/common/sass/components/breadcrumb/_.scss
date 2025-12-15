@@ -1,0 +1,82 @@
+@charset "utf-8";
+@use "../../global/_" as g;
+.c-breadcrumb {
+	margin: 160px 0 40px;
+	padding: 10px 0;
+
+	@include g.smMax {
+		margin: 60px 0 40px;
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: center;
+		width: min(1200px,90%);
+		margin: 0 auto;
+
+		@include g.smMax {
+			padding: 0;
+			flex-wrap: wrap;
+			gap: 5px;
+		}
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		flex-shrink: 0;
+
+		&.__active {
+			font-size: 1.5rem;
+			line-height: 1.35;
+			font-weight: 500;
+			color: g.$white;
+			background: g.$gray01;
+			padding: 5px 10px;
+			text-decoration: none;
+			border-radius: 20px;
+			flex-shrink: unset;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+
+			@include g.smMax {
+				font-size: 1.2rem;
+			}
+
+			&::after {
+				content: none;
+			}
+
+		}
+
+		.__sub {
+			font-size: 1.5rem;
+			line-height: 1.35;
+			font-weight: 500;
+			color: g.$white;
+			background: g.$mainColor01;
+			padding: 5px 10px;
+			text-decoration: none;
+			border-radius: 20px;
+
+			@include g.smMax {
+				font-size: 1.2rem;
+			}
+
+		}
+
+		&::after {
+			content: "";
+			width: 32px;
+			height: 2px;
+			margin: 0 8px;
+			background: g.$line01;
+
+			@include g.smMax {
+				width: 32px;
+			}
+
+		}
+
+	}
+}
