@@ -89,6 +89,10 @@
             display: block;
             transition: all 0.3s;
 
+            @include g.smMax {
+                margin: 0 10px;
+            }
+
             &--inner {
                 margin-bottom: 20px;
                 display: flex;
@@ -432,6 +436,12 @@
             padding: 80px 5%;
         }
 
+        @include g.smMax {
+            width: 100%;
+            padding: 30px 5% 40px;
+            border-radius: 0;
+        }
+
         .c_ttl {
             width: fit-content;
             margin: 0 auto 45px;
@@ -546,7 +556,7 @@
                     background: url(../img/common/ico_arrow-blue.svg) no-repeat center / 18px;
                 }
 
-                &:hover {
+                &.is-not-hovered {
                     opacity: 0.7;
                 }
 

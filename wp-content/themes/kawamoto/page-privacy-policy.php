@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
     <div class="c-mv">
-		<h1 class="c_ttl pg_ttl">
+		<h1 class="c_ttl pg_ttl privacy_ttl">
 			<span class="__en">
 				<span class="__up">P</span>
 				<span class="__up">R</span>

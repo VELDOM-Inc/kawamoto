@@ -13,7 +13,7 @@
   &__catch {
     @include g.font-mincho;
     font-size: clamp(3.2rem, -4.577rem + 16.2vw, 9.6rem);
-    font-weight: 900;
+    font-weight: 700;
     text-align: center;
     margin-bottom: 150px;
     position: sticky;
@@ -28,7 +28,7 @@
 	}
 
 	@include g.smMax {
-		font-size: clamp(2.8rem, 1.467rem + 2.78vw, 4.8rem);
+		font-size: clamp(3rem, 1.467rem + 2.78vw, 4.8rem);
 		margin-bottom: 25px;
 		top: 100px;
 	}

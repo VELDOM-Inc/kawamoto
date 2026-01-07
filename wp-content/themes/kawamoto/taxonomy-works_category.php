@@ -89,7 +89,7 @@
 										$month = get_the_time('m');
 										$day = get_the_time('d');
 									?>
-									<?php echo $year . '.' . $month . '.' . $day . '</span>'; ?>
+									<?php echo $year . '.' . $month . '.' . $day . ''; ?>
 								</time>
 							</div>
 							<div class="c-works-list__category <?php

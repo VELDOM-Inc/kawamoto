@@ -77,18 +77,18 @@
 										$month = get_the_time('m');
 										$day = get_the_time('d');
 									?>
-									<?php echo $year . '.' . $month . '.' . $day . '</span>'; ?>
+									<?php echo $year . '.' . $month . '.' . $day . ''; ?>
 								</time>
 							</div>
 						</div>
 
-						<div class="c-news-list__img">
+						<p class="c-news-list__img">
 							<?php if ( has_post_thumbnail() ) : ?>
 								<img src="<?php the_post_thumbnail_url('full'); ?>" alt="<?php the_title(); ?>" class="__img" loading="lazy">
 							<?php else : ?>
 								<img src="<?php echo get_template_directory_uri(); ?>/common/img/common/pic_dummy.png" alt="no image" class="__img" loading="lazy">
 							<?php endif; ?>
-							</div>
+						</p>
 
 						<p class="c-news-list__ttl"><?php the_title(); ?></p>
 

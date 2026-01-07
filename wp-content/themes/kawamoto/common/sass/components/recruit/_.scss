@@ -41,7 +41,6 @@
             align-items: center;
             justify-content: center;
             gap: 15px;
-            opacity: 0.7;
             transition: all 0.3s;
 
             @include g.mdMax {
@@ -69,8 +68,8 @@
                 border-left: 2px solid g.$line01;
             }
 
-            &:hover {
-                opacity: 1;
+            &.is-not-hovered {
+                opacity: 0.7;
             }
 
         }
@@ -164,7 +163,7 @@
             &--txt {
                 font-size: clamp(1.5rem, 1.378rem + 0.25vw, 1.6rem);
                 line-height: 2;
-                padding-left: 15%;
+                padding-left: 20%;
 
                 @include g.smMax {
                     font-size: 1.5rem;
@@ -415,6 +414,11 @@
                 .c-recruit-number__item--img {
                     width: min(320px,100%);
                     margin: 0 auto 30px;
+
+                    @include g.smMax {
+                        width: 175px;
+                    }
+
                 }
 
             }
@@ -451,6 +455,7 @@
 
             .__sub {
                 font-size: clamp(2rem, 0.542rem + 3.04vw, 3.2rem);
+                line-height: 1.1;
 
                 @include g.smMax {
                     font-size: 1.8rem;
@@ -756,6 +761,11 @@
                         line-height: 1;
                         color: g.$mainColor01;
                         margin-bottom: 15px;
+
+                        @include g.smMax {
+                            margin: 2px 0 10px;
+                        }
+
                     }
 
                     .__txt {
@@ -1010,12 +1020,12 @@
 
             &::before {
                 content: "";
-                width: calc(100% - (100% - 160px) / 5);
+                width: calc(100% - 160px);
                 height: 4px;
                 background: g.$subColor02;
                 position: absolute;
                 top: 130px;
-                left: 5px;
+                left: 48px;
 
                 @include g.mdMax {
                     width: 2px;
@@ -1027,7 +1037,7 @@
             }
 
             &--list {
-                width: calc((100% - 160px) / 5);
+                width: calc(100% / 5);
                 position: relative;
 
                 @include g.mdMax {
@@ -1038,7 +1048,7 @@
                 }
 
                 .__time {
-                    margin:0 0 15px -42px;
+                    margin:0 0 15px;
                     display: flex;
                     flex-direction: column;
                     gap: 15px;
@@ -1096,6 +1106,7 @@
                 }
 
                 .__info {
+                    margin: 0 0 0 40px;
 
                     @include g.mdMax {
                         width: calc(100% - 113px);
@@ -1197,6 +1208,7 @@
 
     .__entry {
         background: g.$subColor03;
+        transition-delay: unset;
 
         &:hover {
             background: g.$subColor05;

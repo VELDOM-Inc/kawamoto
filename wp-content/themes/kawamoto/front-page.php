@@ -95,6 +95,18 @@
 		<div class="c-index-slide__item">
 			<img src="<?php echo get_template_directory_uri(); ?>/common/img/top/pic_slide04.png" alt="工事風景" class="__img">
 		</div>
+		<div class="c-index-slide__item small">
+			<img src="<?php echo get_template_directory_uri(); ?>/common/img/top/pic_slide01.png" alt="工事風景" class="__img">
+		</div>
+		<div class="c-index-slide__item">
+			<img src="<?php echo get_template_directory_uri(); ?>/common/img/top/pic_slide02.png" alt="工事風景" class="__img">
+		</div>
+		<div class="c-index-slide__item small">
+			<img src="<?php echo get_template_directory_uri(); ?>/common/img/top/pic_slide03.png" alt="工事風景" class="__img">
+		</div>
+		<div class="c-index-slide__item">
+			<img src="<?php echo get_template_directory_uri(); ?>/common/img/top/pic_slide04.png" alt="工事風景" class="__img">
+		</div>
 	</div>
 
 	<div class="c-index-works">
@@ -171,6 +183,7 @@
 				<span class="__en">
 					<span class="__up">S</span>
 					<span class="__up">E</span>
+					<span class="__up">R</span>
 					<span class="__up">V</span>
 					<span class="__up">I</span>
 					<span class="__up">C</span>
@@ -186,38 +199,38 @@
 			<div class="c-index-service__detail is-fade">
 				<div class="c-index-service__detail--img">
 					<div class="c-index-service__detail--img-list is-active" data-index="1">
-						<img src="<?php echo get_template_directory_uri(); ?>/common/img/top/pic_service01.png" alt="" class="__img">
+						<img src="<?php echo get_template_directory_uri(); ?>/common/img/top/pic_service01.png" alt="足場工事" class="__img">
 					</div>
 					<div class="c-index-service__detail--img-list" data-index="2">
-						<img src="<?php echo get_template_directory_uri(); ?>/common/img/top/pic_service02.png" alt="" class="__img">
+						<img src="<?php echo get_template_directory_uri(); ?>/common/img/top/pic_service02.png" alt="橋梁工事" class="__img">
 					</div>
 					<div class="c-index-service__detail--img-list" data-index="3">
-						<img src="<?php echo get_template_directory_uri(); ?>/common/img/top/pic_service03.png" alt="" class="__img">
+						<img src="<?php echo get_template_directory_uri(); ?>/common/img/top/pic_service03.png" alt="プラント工事" class="__img">
 					</div>
 					<div class="c-index-service__detail--img-list" data-index="4">
-						<img src="<?php echo get_template_directory_uri(); ?>/common/img/top/pic_service04.png" alt="" class="__img">
+						<img src="<?php echo get_template_directory_uri(); ?>/common/img/top/pic_service04.png" alt="鍛冶工事" class="__img">
 					</div>
 					<div class="c-index-service__detail--img-list" data-index="5">
-						<img src="<?php echo get_template_directory_uri(); ?>/common/img/top/pic_service05.png" alt="" class="__img">
+						<img src="<?php echo get_template_directory_uri(); ?>/common/img/top/pic_service05.png" alt="鋼構造物工事" class="__img">
 					</div>
 					<div class="c-index-service__detail--img-list" data-index="6">
-						<img src="<?php echo get_template_directory_uri(); ?>/common/img/top/pic_service06.png" alt="" class="__img">
+						<img src="<?php echo get_template_directory_uri(); ?>/common/img/top/pic_service06.png" alt="機械器具設置工事" class="__img">
 					</div>
 					<div class="c-index-service__detail--img-list" data-index="7">
-						<img src="<?php echo get_template_directory_uri(); ?>/common/img/top/pic_service07.png" alt="" class="__img">
+						<img src="<?php echo get_template_directory_uri(); ?>/common/img/top/pic_service07.png" alt="解体工事" class="__img">
 					</div>
 				</div>
 				<div class="c-index-service__detail--list">
 					<div class="c-index-service__detail--list-inner">
-						<a class="__link" href=""><span class="__sub">足場工事</span></a>
-						<a class="__link" href=""><span class="__sub">橋梁工事</span></a>
-						<a class="__link" href=""><span class="__sub">プラント<br class="u-sm-max">工事</span></a>
-						<a class="__link" href=""><span class="__sub">鍛冶工事</span></a>
+						<a class="__link __hover-link" href="<?php echo home_url(); ?>/service/#service01"><span class="__sub">足場工事</span></a>
+						<a class="__link __hover-link" href="<?php echo home_url(); ?>/service/#service02"><span class="__sub">橋梁工事</span></a>
+						<a class="__link __hover-link" href="<?php echo home_url(); ?>/service/#service03"><span class="__sub">プラント<br class="u-sm-max">工事</span></a>
+						<a class="__link __hover-link" href="<?php echo home_url(); ?>/service/#service04"><span class="__sub">鍛冶工事</span></a>
 					</div>
 					<div class="c-index-service__detail--list-inner">
-						<a class="__link" href=""><span class="__sub">鋼構造物<br class="u-sm-max">工事</span></a>
-						<a class="__link" href=""><span class="__sub">機械器具<br class="u-sm-max">設置工事</span></a>
-						<a class="__link" href=""><span class="__sub">解体工事</span></a>
+						<a class="__link __hover-link" href="<?php echo home_url(); ?>/service/#service05"><span class="__sub">鋼構造物<br class="u-sm-max">工事</span></a>
+						<a class="__link __hover-link" href="<?php echo home_url(); ?>/service/#service06"><span class="__sub">機械器具<br class="u-sm-max">設置工事</span></a>
+						<a class="__link __hover-link" href="<?php echo home_url(); ?>/service/#service07"><span class="__sub">解体工事</span></a>
 					</div>
 				</div>
 			</div>
@@ -259,7 +272,7 @@
 
 	<div class="c-index-recruit-sp u-sm-max is-fade">
 		<div class="c-index-recruit-sp__inner">
-			<img src="<?php echo get_template_directory_uri(); ?>/common/img/top/pic_recruit_sp.png" alt="" class="__img">
+			<img src="<?php echo get_template_directory_uri(); ?>/common/img/top/pic_recruit_sp.png" alt="採用情報" class="__img">
 		</div>
 		<section class="c-index-recruit-sp__info">
 			<h2 class="c_ttl">

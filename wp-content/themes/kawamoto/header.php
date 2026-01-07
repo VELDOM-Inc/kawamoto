@@ -7,7 +7,7 @@
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Zen+Kaku+Gothic+New&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="format-detection" content="telephone=no">
@@ -32,7 +32,7 @@
 					<nav class="l-header-nav__list">
 						<ul class="l-header-nav__center">
 							<li class="l-header-nav__center__item">
-								<a class="l-header-nav__link __current" href="<?php echo home_url(); ?>">トップページ</a>
+								<a class="l-header-nav__link __current" href="<?php echo home_url(); ?>">ホーム</a>
 							</li>
 							<li class="l-header-nav__center__item">
 								<a class="l-header-nav__link" href="<?php echo home_url(); ?>/news/">お知らせ</a>
@@ -69,6 +69,7 @@
 									<div class="__inner">会社情報</div>
 									<div class="l-header-nav-sp__list--sub">
 										<div class="l-header-nav-sp__list--sub-inner">
+											<a href="<?php echo home_url(); ?>/company/" class="__link __main">会社情報トップ</a>
 											<a href="<?php echo home_url(); ?>/company/#message" class="__link">ご挨拶</a>
 											<a href="<?php echo home_url(); ?>/company/#overview" class="__link">会社概要</a>
 											<a href="<?php echo home_url(); ?>/company/#access" class="__link">アクセス</a>
@@ -83,6 +84,7 @@
 									<div class="__inner">事業内容</div>
 									<div class="l-header-nav-sp__list--sub">
 										<div class="l-header-nav-sp__list--sub-inner">
+											<a href="<?php echo home_url(); ?>/service/" class="__link __main">事業内容トップ</a>
 											<a href="<?php echo home_url(); ?>/service/#service01" class="__link">足場工事</a>
 											<a href="<?php echo home_url(); ?>/service/#service02" class="__link">橋梁工事</a>
 											<a href="<?php echo home_url(); ?>/service/#service03" class="__link">プラント工事</a>
@@ -98,6 +100,7 @@
 									<div class="__inner">採用情報</div>
 									<div class="l-header-nav-sp__list--sub">
 										<div class="l-header-nav-sp__list--sub-inner">
+											<a href="<?php echo home_url(); ?>/recruit/" class="__link __main">採用情報トップ</a>
 											<a href="<?php echo home_url(); ?>/recruit/#message" class="__link">採用ご挨拶</a>
 											<a href="<?php echo home_url(); ?>/recruit/#number" class="__link">数字で見る<br>河本建設工業</a>
 											<a href="<?php echo home_url(); ?>/recruit/#benefit" class="__link">福利厚生</a>

@@ -27,13 +27,13 @@
 		</section>
 
 		<ul class="c-service-category is-fade">
-			<li class="c-service-category__list"><a href="#service01" class="__link">足場工事</a></li>
-			<li class="c-service-category__list"><a href="#service02" class="__link">橋梁工事</a></li>
-			<li class="c-service-category__list"><a href="#service03" class="__link">プラント<br>工事</a></li>
-			<li class="c-service-category__list"><a href="#service04" class="__link">鍛冶工事</a></li>
-			<li class="c-service-category__list"><a href="#service05" class="__link">鋼構造物<br>工事</a></li>
-			<li class="c-service-category__list"><a href="#service06" class="__link">機械器具<br>設置工事</a></li>
-			<li class="c-service-category__list"><a href="#service07" class="__link">解体工事</a></li>
+			<li class="c-service-category__list"><a href="#service01" class="__link __hover-link">足場工事</a></li>
+			<li class="c-service-category__list"><a href="#service02" class="__link __hover-link">橋梁工事</a></li>
+			<li class="c-service-category__list"><a href="#service03" class="__link __hover-link">プラント<br>工事</a></li>
+			<li class="c-service-category__list"><a href="#service04" class="__link __hover-link">鍛冶工事</a></li>
+			<li class="c-service-category__list"><a href="#service05" class="__link __hover-link">鋼構造物<br>工事</a></li>
+			<li class="c-service-category__list"><a href="#service06" class="__link __hover-link">機械器具<br>設置工事</a></li>
+			<li class="c-service-category__list"><a href="#service07" class="__link __hover-link">解体工事</a></li>
 		</ul>
 
 		<div class="c-service-list">
@@ -123,7 +123,7 @@
 			<div class="c-service-voice__list">
 				<div class="c-service-voice__item is-fade">
 					<p class="c-service-voice__item--ttl">安全管理と確実な<br>工期対応に安心感</p>
-					<p class="c-service-voice__item--txt">安当社の設備工事において、河本建設工業様には足場・鉄骨工事を担当いただきました。<br>安全対策が徹底されており、現場スタッフへの教育も行き届いていると感じました。<br>工期遵守はもちろん、突発的な変更にも柔軟に対応していただき、安心して現場を任せることができました。</p>
+					<p class="c-service-voice__item--txt">当社の設備工事において、河本建設工業様には足場・鉄骨工事を担当いただきました。<br>安全対策が徹底されており、現場スタッフへの教育も行き届いていると感じました。<br>工期遵守はもちろん、突発的な変更にも柔軟に対応していただき、安心して現場を任せることができました。</p>
 				</div>
 				<div class="c-service-voice__item is-fade">
 					<p class="c-service-voice__item--ttl">難易度の高い工事を<br>確かな技術で実現</p>

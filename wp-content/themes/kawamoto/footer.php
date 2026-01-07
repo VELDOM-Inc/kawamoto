@@ -99,9 +99,11 @@
 				</div>
 			</div>
 			<div class="l-footer-bottom">
-				<a href="<?php echo home_url(); ?>/privacy-policy/" class="l-footer-bottom__link __opacity">プライバシーポリシー</a>
-				<div class="l-footer-bottom__copyright">
-					<small>Copyright &copy; 2025 株式会社河本建設工業 <br class="u-sm-max">All Rights Reserved.</small>
+				<div class="l-footer-bottom__inner">
+					<a href="<?php echo home_url(); ?>/privacy-policy/" class="l-footer-bottom__link __opacity">プライバシーポリシー</a>
+					<div class="l-footer-bottom__copyright">
+						<small>Copyright &copy; 2026 株式会社河本建設工業 <br class="u-sm-max">All Rights Reserved.</small>
+					</div>
 				</div>
 			</div>
 			<a href="#" class="l-footer-pagetop">PAGE TOP</a>

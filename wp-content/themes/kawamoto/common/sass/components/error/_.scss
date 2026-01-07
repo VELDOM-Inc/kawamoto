@@ -1,20 +1,28 @@
 @charset "utf-8";
 @use "../../global/_" as g;
 
-.c-error {
+.c-mv {
 
-    .c_mv {
+    .c_ttl { 
+    
+        &.error_ttl {
 
-        .c_ttl {
-            font-size: clamp(3.6rem, -0.775rem + 9.11vw, 7.2rem);
+            .__ja {
+                font-size: clamp(3.2rem, 0.284rem + 6.08vw, 5.6rem);
 
-            @include g.smMax {
-                font-size: 2rem;
+                @include g.smMax {
+                    font-size: 1.9rem;
+                }
+
             }
 
         }
 
     }
+
+}
+
+.c-error {
 
     .c_ttl {
         @include g.font-mincho;

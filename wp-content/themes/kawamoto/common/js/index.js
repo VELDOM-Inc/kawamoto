@@ -57,6 +57,8 @@ $(function() {
   $('.l-header-nav-sp__toggle').click(function(){
     $('.l-header-nav-sp').toggleClass('is-open');
     $('.l-header-logo').toggleClass('__white');
+    $('.l-header-nav-sp__list').toggleClass('__scroll');
+    $('body').toggleClass('__hidden');
   });
 });
 
@@ -116,6 +118,25 @@ $(function () {
     $(".is-slide").on("inview", function () {
         $(this).addClass("is-inview");
     });
+});
+
+//hover active link
+const links = document.querySelectorAll('.__hover-link');
+
+links.forEach(link => {
+  link.addEventListener('mouseenter', () => {
+    links.forEach(other => {
+      if (other !== link) {
+        other.classList.add('is-not-hovered');
+      }
+    });
+  });
+
+  link.addEventListener('mouseleave', () => {
+    links.forEach(other => {
+      other.classList.remove('is-not-hovered');
+    });
+  });
 });
 
 //service img hover
@@ -217,7 +238,7 @@ $(function () {
     arrows: false,
     cssEase: "linear",
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
       {

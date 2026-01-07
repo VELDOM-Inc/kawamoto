@@ -12,7 +12,6 @@
 		width: min(1280px,90%);
 		margin: 0 auto;
 		padding: 0 0 80px;
-		border-bottom: 1px solid g.$line01;
 		display: flex;
 		align-items: flex-start;
 		justify-content: space-between;
@@ -46,7 +45,7 @@
 			}
 
 			&__list {
-				width: calc((100% - 45px) / 4);
+				width: 144px;
 
 				@include g.smMax {
 					width: 100%;
@@ -214,19 +213,24 @@
 	}
 
 	&-bottom {
-		width: min(1280px,90%);
-		margin: 0 auto;
-		padding: 40px 0 60px;
-		display: flex;
-		justify-content: space-between;
+		border-top: 1px solid g.$line01;
 
-		@include g.smMax {
-			text-align: center;
-			padding: 40px 0 30px;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			gap: 20px;
+		&__inner {
+			width: min(1280px,90%);
+			margin: 0 auto;
+			padding: 40px 0 60px;
+			display: flex;
+			justify-content: space-between;
+
+			@include g.smMax {
+				text-align: center;
+				padding: 40px 0 30px;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				gap: 20px;
+			}
+
 		}
 
 		&__link {

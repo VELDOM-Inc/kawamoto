@@ -34,13 +34,13 @@
 				<div class="c-news-detail__time"><time datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php echo get_the_date('Y.m.d'); ?></time></div>
 			</div>
 			<h2 class="c_ttl is-fade"><?php the_title(); ?></h2>
-			<div class="c-news-detail__img">
+			<!--<div class="c-news-detail__img">
 				<?php if ( has_post_thumbnail() ) : ?>
 					<img src="<?php the_post_thumbnail_url('full'); ?>" alt="<?php the_title(); ?>" class="__img" loading="lazy">
 				<?php else : ?>
 					<img src="<?php echo get_template_directory_uri(); ?>/common/img/common/pic_dummy.png" alt="no image" class="__img" loading="lazy">
 				<?php endif; ?>
-			</div>
+			</div>-->
 			<div class="c-news-detail__contents is-fade"><?php the_content(); ?></div>
 		</section>
 

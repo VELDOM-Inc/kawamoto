@@ -41,6 +41,10 @@
 				color: #333;
 				box-sizing: border-box;
 
+				@include g.smMax {
+					padding: 15px;
+				}
+
 				&::placeholder {
 					color: #999;
 				}
@@ -49,6 +53,8 @@
 
 			.c-contact-form__number {
 				width: 30%;
+				padding-left: 26px;
+				position: relative;
 
 				@include g.smMax {
 					width: 100%;
@@ -56,12 +62,19 @@
 
 				.wpcf7-form-control-wrap {
 					display: flex;
-					align-items: center;
-					gap: 10px;
+					flex-direction: column;
+					align-items: flex-start;
+				}
 
-					&::before {
-						content: "〒";
-						font-size: 1.6rem;
+				&::before {
+					content: "〒";
+					font-size: 1.6rem;
+					position: absolute;
+					top: 25px;
+					left: 0;
+
+					@include g.smMax {
+						top: 20px;
 					}
 
 				}

@@ -76,7 +76,7 @@
 					<div class="c-company-overview__block">
 						<dt class="c-company-overview__ttl">所在地</dt>
 						<dd class="c-company-overview__txt">〒870-0905　大分県大分市向原西2丁目6-8<br>
-						TEL／<a class="__tel" href="097-529-7061">097-529-7061</a><br>
+						TEL／<a class="__tel" href="tel:097-529-7061">097-529-7061</a><br>
 						FAX／097-529-7062</dd>
 					</div>
 					<div class="c-company-overview__block">

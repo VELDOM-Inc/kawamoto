@@ -24,16 +24,16 @@
 
 		<div class="c-recruit-menu is-fade">
 			<div class="c-recruit-menu__inner">
-				<a class="c-recruit-menu__link" href="#message">採用のご挨拶</a>
-				<a class="c-recruit-menu__link" href="#number">数字で見る<br class="u-sm-max">河本建設工業</a>
-				<a class="c-recruit-menu__link" href="#benefit">福利厚生</a>
-				<a class="c-recruit-menu__link" href="#support">資格取得支援事例</a>
+				<a class="c-recruit-menu__link __link __hover-link" href="#message">採用のご挨拶</a>
+				<a class="c-recruit-menu__link __link __hover-link" href="#number">数字で見る<br class="u-sm-max">河本建設工業</a>
+				<a class="c-recruit-menu__link __link __hover-link" href="#benefit">福利厚生</a>
+				<a class="c-recruit-menu__link __link __hover-link" href="#support">資格取得支援事例</a>
 			</div>
 			<div class="c-recruit-menu__inner">
-				<a class="c-recruit-menu__link" href="#interview">社員インタビュー</a>
-				<a class="c-recruit-menu__link" href="#schedule">1日のスケジュール</a>
-				<a class="c-recruit-menu__link" href="#guideline">募集要項</a>
-				<a class="c-recruit-menu__link" href="#entry">エントリー</a>
+				<a class="c-recruit-menu__link __link __hover-link" href="#interview">社員インタビュー</a>
+				<a class="c-recruit-menu__link __link __hover-link" href="#schedule">1日のスケジュール</a>
+				<a class="c-recruit-menu__link __link __hover-link" href="#guideline">募集要項</a>
+				<a class="c-recruit-menu__link __link __hover-link" href="#entry">エントリー</a>
 			</div>
 		</div>
 
@@ -222,7 +222,7 @@
 									<li class="__item">大分トリニータ観戦チケット助成</li>
 									<li class="__item">大分 B-リングス観戦チケット助成</li>
 								</ul>
-								その他2ヶ月に1回、会報誌が届くのでその中から各お店や施設、イベントの補助やサービスが受けらけれます！
+								その他2ヶ月に1回、会報誌が届くのでその中から各お店や施設、イベントの補助やサービスが受けられます！
 							</div>
 						</div>
 						<div class="c-recruit-benefit__item--img">
@@ -577,48 +577,48 @@
 			</h2>
 			<dl class="c-recruit-guideline__table is-fade">
 				<div class="c-recruit-guideline__table--block">
-					<div class="__ttl">応募職種</div>
-					<div class="__txt">【技術職】建設作業員</div>
+					<dt class="__ttl">応募職種</dt>
+					<dd class="__txt">【技術職】建設作業員</dd>
 				</div>
 				<div class="c-recruit-guideline__table--block">
-					<div class="__ttl">募集対象（人数）</div>
-					<div class="__txt">5名</div>
+					<dt class="__ttl">募集対象（人数）</dt>
+					<dd class="__txt">5名</dd>
 				</div>
 				<div class="c-recruit-guideline__table--block">
-					<div class="__ttl">給与（月給）</div>
-					<div class="__txt">250,000円～400,000円<br>※尚、試用期間は、入社後の3カ月</div>
+					<dt class="__ttl">給与（月給）</dt>
+					<dd class="__txt">250,000円～400,000円<br>※尚、試用期間は、入社後の3カ月</dd>
 				</div>
 				<div class="c-recruit-guideline__table--block">
-					<div class="__ttl">賞与</div>
-					<div class="__txt">年2回</div>
+					<dt class="__ttl">賞与</dt>
+					<dd class="__txt">年2回</dd>
 				</div>
 				<div class="c-recruit-guideline__table--block">
-					<div class="__ttl">昇給</div>
-					<div class="__txt">年1回</div>
+					<dt class="__ttl">昇給</dt>
+					<dd class="__txt">年1回</dd>
 				</div>
 				<div class="c-recruit-guideline__table--block">
-					<div class="__ttl">勤務時間</div>
-					<div class="__txt">8:00～17:00（休憩1時間含む。実働8時間）</div>
+					<dt class="__ttl">勤務時間</dt>
+					<dd class="__txt">8:00～17:00（休憩1時間含む。実働8時間）</dd>
 				</div>
 				<div class="c-recruit-guideline__table--block">
-					<div class="__ttl">勤務地</div>
-					<div class="__txt">大分県内（出張あり）</div>
+					<dt class="__ttl">勤務地</dt>
+					<dd class="__txt">大分県内（出張あり）</dd>
 				</div>
 				<div class="c-recruit-guideline__table--block">
-					<div class="__ttl">休⽇休暇</div>
-					<div class="__txt">土・日(有給休暇、慶弔休暇あり)</div>
+					<dt class="__ttl">休⽇休暇</dt>
+					<dd class="__txt">土・日(有給休暇、慶弔休暇あり)</dd>
 				</div>
 				<div class="c-recruit-guideline__table--block">
-					<div class="__ttl">諸⼿当</div>
-					<div class="__txt">時間外手当、深夜手当、出張手当、資格手当等</div>
+					<dt class="__ttl">諸⼿当</dt>
+					<dd class="__txt">時間外手当、深夜手当、出張手当、資格手当等</dd>
 				</div>
 				<div class="c-recruit-guideline__table--block">
-					<div class="__ttl">保険制度</div>
-					<div class="__txt">健康保険、厚生年金、雇用保険、労災保険</div>
+					<dt class="__ttl">保険制度</dt>
+					<dd class="__txt">健康保険、厚生年金、雇用保険、労災保険</dd>
 				</div>
 				<div class="c-recruit-guideline__table--block">
-					<div class="__ttl">福利厚生</div>
-					<div class="__txt">NISA 奨励金、大分勤労者サービス加入、社員旅行実績あり</div>
+					<dt class="__ttl">福利厚生</dt>
+					<dd class="__txt">NISA 奨励金、大分勤労者サービス加入、社員旅行実績あり</dd>
 				</div>
 			</dl>
 		</section>
@@ -641,7 +641,7 @@
 						<span class="__up">ー</span>
 					</span>
 				</h2>
-				<div class="c-contact-bottom__txt">採用に関するお問い合わせ・応募はこちら</div>
+				<div class="c-contact-bottom__txt">採用に関するお問い合わせ・<br class="u-sm-max">応募はこちら</div>
 			</section>
 			<div class="c-contact-bottom__arrow"></div>
 		</a>
