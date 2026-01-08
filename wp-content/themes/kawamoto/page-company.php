@@ -86,7 +86,7 @@
 					<div class="c-company-overview__block">
 						<dt class="c-company-overview__ttl">許可</dt>
 						<dd class="c-company-overview__txt">大分県知事許可（般-3）第14119号<br>
-						とび・土工・土木・石・管・鋼構造物・舗装・しゅんせつ・機械器具設置・水道施設・解体・塗装</dd>
+						とび・土工・土木・石・管・鋼構造物・舗装・しゅんせつ・機械器具設置・水道施設・解体・塗装<br>労働者派遣事業　派44-300357</dd>
 					</div>
 					<div class="c-company-overview__block">
 						<dt class="c-company-overview__ttl">資格者</dt>
